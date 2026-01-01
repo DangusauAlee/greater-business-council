@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Heart, MessageSquare, Share2, Image as ImageIcon, Send, X, Copy, Repeat, ArrowRight, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
 import { BlogPost } from '../types';
-import { getFeed } from '../services/mockApi';
+import { getFeed } from '../services/supabase';
 
 const Home = () => {
     const [posts, setPosts] = useState<BlogPost[]>([]);

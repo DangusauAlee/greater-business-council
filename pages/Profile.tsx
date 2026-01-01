@@ -8,7 +8,7 @@ import {
 import { useNavigate, useParams } from 'react-router-dom';
 import BusinessCard from '../components/cards/BusinessCard';
 import { BlogPost, Business } from '../types';
-import { getUserPosts, getUserBusinesses, getMemberProfile } from '../services/mockApi';
+import { getUserPosts, getUserBusinesses, getMemberProfile } from '../services/supabase';
 
 type ViewState = 'profile' | 'settings' | 'edit_profile' | 'notifications' | 'privacy' | 'support';
 

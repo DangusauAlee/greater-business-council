@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import MemberCard from '../components/cards/MemberCard';
 import { Member } from '../types';
-import { getMembers } from '../services/mockApi';
+import { getMembers } from '../services/supabase';
 import { Search } from 'lucide-react';
 
 const Members = () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, Clock, Users, Share2, Ticket } from 'lucide-react';
 import { Event } from '../types';
-import { getEvent } from '../services/mockApi';
+import { getEvent } from '../services/supabase';
 
 const EventDetails = () => {
     const { id } = useParams();

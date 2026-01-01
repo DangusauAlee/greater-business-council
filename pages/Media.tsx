@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Search, Play, Image as ImageIcon, Video, Upload, Clock, Eye } from 'lucide-react';
 import { MediaItem } from '../types';
-import { getMediaItems } from '../services/mockApi';
+import { getMediaItems } from '../services/supabase';
 
 const Media = () => {
     const navigate = useNavigate();

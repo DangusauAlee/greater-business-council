@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { Conversation, Member } from '../types';
-import { getConversations, getMembers } from '../services/mockApi';
+import { getConversations, getMembers } from '../services/supabase';
 import { Edit, Search, X, MessageSquarePlus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 

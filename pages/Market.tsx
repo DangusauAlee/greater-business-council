@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Search, Plus, ShoppingBag, Upload, Tag, MapPin, DollarSign, Filter, Package } from 'lucide-react';
 import { Classified } from '../types';
-import { getClassifieds } from '../services/mockApi';
+import { getClassifieds } from '../services/supabase';
 
 const Market = () => {
     const navigate = useNavigate();

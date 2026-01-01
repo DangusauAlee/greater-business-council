@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Paperclip, Mic, Send, Image as ImageIcon, Camera, FileText, X, Play, Pause, Plus } from 'lucide-react';
 import { Message, User } from '../types';
-import { getChatMessages, getUser } from '../services/mockApi';
+import { getChatMessages, getUser } from '../services/supabase';
 
 const ChatSession = () => {
     const { userId } = useParams();

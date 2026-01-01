@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, MapPin, Globe, Phone, Mail, Clock, ShieldCheck, Star, Edit, Plus, Image as ImageIcon, Send, Share2, Heart, MessageSquare, Settings, BarChart3, Package } from 'lucide-react';
 import { Business, BlogPost } from '../types';
-import { getBusinesses, getBusinessPosts } from '../services/mockApi';
+import { getBusinesses, getBusinessPosts } from '../services/supabase';
 
 const BusinessProfile = () => {
     const { id } = useParams();

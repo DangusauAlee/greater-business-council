@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Search, Plus, Calendar, MapPin, Clock, Upload, AlignLeft, Users } from 'lucide-react';
 import { Event } from '../types';
-import { getEvents } from '../services/mockApi';
+import { getEvents } from '../services/supabase';
 
 const Events = () => {
     const navigate = useNavigate();

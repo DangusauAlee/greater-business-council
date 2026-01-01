@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { Calendar, Newspaper, ShoppingBag, Video, ChevronLeft, MapPin, Clock, Briefcase, Plus, Search, DollarSign, Filter } from 'lucide-react';
 import { Event, Classified, Job } from '../types';
-import { getEvents, getClassifieds, getJobs } from '../services/mockApi';
+import { getEvents, getClassifieds, getJobs } from '../services/supabase';
 import { useNavigate } from 'react-router-dom';
 
 const Explore = () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Share2, MapPin, ShieldCheck, Heart, MessageCircle, Phone, Tag } from 'lucide-react';
 import { Classified } from '../types';
-import { getClassified } from '../services/mockApi';
+import { getClassified } from '../services/supabase';
 
 const MarketDetails = () => {
     const { id } = useParams();

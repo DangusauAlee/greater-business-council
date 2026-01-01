@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowLeft, MessageCircle, Heart, MessageSquare, Info } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Notification } from '../types';
-import { getNotifications } from '../services/mockApi';
+import { getNotifications } from '../services/supabase';
 
 const Notifications = () => {
     const navigate = useNavigate();

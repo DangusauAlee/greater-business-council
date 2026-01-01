@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Share2, Heart, MessageSquare, Eye, Calendar, Play, Download, MoreVertical } from 'lucide-react';
 import { MediaItem } from '../types';
-import { getMediaItem } from '../services/mockApi';
+import { getMediaItem } from '../services/supabase';
 
 const MediaDetails = () => {
     const { id } = useParams();

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import BusinessCard from '../components/cards/BusinessCard';
 import { Business } from '../types';
-import { getBusinesses } from '../services/mockApi';
+import { getBusinesses } from '../services/supabase';
 import { Search, Plus, MapPin, Upload, Building2, AlignLeft, Clock, Mail, Phone, Globe, Package } from 'lucide-react';
 
 const Businesses = () => {
